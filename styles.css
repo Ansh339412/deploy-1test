@@ -1,76 +1,60 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Reset */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(120deg, #ff7eb3, #ff758c, #ff5c62);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
+/* Background and container styling */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Content container */
 .container {
-    text-align: center;
-    color: white;
-    animation: fadeIn 2s ease-in-out;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
 }
 
-.hello {
-    font-size: 4rem;
-    background: linear-gradient(to right, #f7971e, #ffd200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: fadeIn 2s ease-in-out;
-    
+/* Title styling */
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.subtitle {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    animation: fadeIn 2.5s ease-in-out;
+/* Quote styling */
+.quote {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  font-style: italic;
 }
 
-.cta-button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: linear-gradient(120deg, #00c6ff, #0072ff);
-    border: none;
-    border-radius: 30px;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Button styling */
+.btn {
+  background: #2575fc;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
 }
 
-.cta-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-@keyframes textGlow {
-    from {
-        text-shadow: 0 0 10px #ffd200, 0 0 20px #ffd200, 0 0 30px #ff7f50;
-    }
-    to {
-        text-shadow: 0 0 20px #ffd200, 0 0 30px #ff7f50, 0 0 40px #ff4500;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.btn:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
 }
