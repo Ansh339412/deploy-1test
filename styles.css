@@ -26,7 +26,8 @@ body {
     background: linear-gradient(to right, #f7971e, #ffd200);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textGlow 1.5s infinite alternate;
+    animation: fadeIn 2s ease-in-out;
+    
 }
 
 .subtitle {
